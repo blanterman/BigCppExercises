@@ -1,0 +1,31 @@
+1 1143.24 Initial Balance
+2 -20.05 Debit Card
+3 -800 Check 3000
+4 -100 Debit Card
+5 -7.25 Debit Card
+6 500 Rewards
+7 -35.35 Debit Card
+8 -24 Debit Card
+9 -78 Debit Card
+10 -1.5 Debit Card
+11 -56 Debit Card
+12 -0.56 Debit Card
+13 -45.1 Debit Card
+14 -59.89 Debit Card
+15 2000.5 Payday
+16 -500 Debit Card
+17 -43.6 Debit Card
+18 -8.03 Debit Card
+19 -0.56 Debit Card
+20 -98.8 Debit Card
+21 -45.6 Debit Card
+22 -300 Debit Card
+23 -0.67 Debit Card
+24 -67 Debit Card
+25 -400.9 Debit Card
+26 -199.99 Debit Card
+27 -67 Debit Card
+28 -45.98 Debit Card
+29 -50.5 Debit Card
+30 2000.5 Payday
+31 -600 Debit Card

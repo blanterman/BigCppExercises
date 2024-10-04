@@ -1,0 +1,49 @@
+
+			  *          OTPH TESTS                                          *
+			  * T0500:   ID SIGNATURE TEST                                   *
+			  * T0525:   IDK2 +24 VDC STATIC STTO TEST                       *
+			  * T0575:   PNA: COMMUNICATIONS                                 *
+			  * T0576:   PNA: ECAL AND POWER SENSOR CONNECTIONS              *
+			  * T0600:   PNA: CREATE TWO-PORT CALSET                         *
+			  * T0625:   PNA: CHARACTERIZE GMS ADAPTER                       *
+			  * T0650:   PNA: CREATE S2P FILE - PATH 1                       *
+			  * T0651:   PNA: CREATE S2P FILE - PATH 2                       *
+			  * T0652:   PNA: CREATE S2P FILE - PATH 3                       *
+			  * T0553:   PNA: CREATE S2P FILE - PATH 4                       *
+			  * T0654:   PNA: CREATE S2P FILE - PATH 5                       *
+			  * T0675:   PNA: CREATE VMC CALSET                              *
+			  * T0676:   PNA: CREATE SMC CALSET                              *
+			  *                                                              *
+			  *          UUT TESTS                                           *
+			  * T0700:   UUT SIGNATURE TEST                                  *
+PT0540        * T0725:   UUT +5 VDC STTO TEST                                *
+PT0550        * T0750:   UUT -8 VDC STTO TEST                                *
+
+		
+PT0710 		  * T1100:   J2 INPUT VSWR TEST                                  *
+PT0720        * T1110:   J6 OUTPUT VSWR TEST (J2 SELECTED)                   *
+PT0730        * T1120:   J2 PASSBAND GAIN TEST                               *
+PT0640		  * T1600:   J2 ISOLATION TEST                                   *
+PT0650        * T1610:   J3 ISOLATION TEST                                   *
+PT0660        * T1620:   J4 ISOLATION TEST                                   *
+PT0740        * T2100:   J3 INPUT VSWR TEST                                  *
+PT0760        * T2110:   J3 PASSBAND GAIN TEST                               *
+PT0770		  * T2600:   J4 INPUT VSWR TEST                                  *
+PT0790        * T2610:   J4 PASSBAND GAIN TEST                               *
+PT0800        * T2620:   J4 PASSBAND GAIN VARIATION TEST                     *
+PT0810        * T2630:   J4 ATTENUATOR TEST                                  *
+PT0820        * T2640:   J4 30 dB SUBBAND ATTENUATION TEST                   *
+PT0830        * T3100:   J2 REF J4 PASSBAND AMPLITUDE TRACK TEST             *
+PT0840        * T3110:   J3 REF J4 PASSBAND AMPLITUDE TRACK TEST             *
+PT0850		  * T3600:   J2 REF J4 PHASE TRACK TEST                          *
+PT0860        * T3610:   J3 REF J4 PHASE TRACK TEST                          *
+PT0880		  * T4100:   J2 2X2 SPURIOUS RESPONSE                            *
+		
+		
+			  * 5000:   UUT -8VDC STTO DIAGNOSTIC TEST                       *
+			  * 5100:   J2 ATTENUATOR AT1 DIAGNOSTIC TEST                    *
+			  * 5200:   J3 ATTENUATOR AT1 DIAGNOSTIC TEST                    *
+			  * 5300:   J4 ATTENUATOR AT1 DIAGNOSTIC TEST                    *
+			  * 5400:   PNA: CREATE S2P FILE - PATH 6                        *
+DT5730.00     * 5500:   J2 LOW PASSBAND GAIN DIAG A1                         *
+DT5730.01     * 5510:   J2 LOW PASSBAND GAIN DIAG M1                         *

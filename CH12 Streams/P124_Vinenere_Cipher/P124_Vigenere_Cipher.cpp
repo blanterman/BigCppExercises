@@ -24,7 +24,26 @@ is encrypted in the same way as the first.
 Write a program that encrypts or decrypts an input text according to this 
 cipher.
 
+A note on how to use this program:
+You can use this in the command line. Once you have the .exe just navigate to
+the folder and type:
+
+BigCpp.exe -d -k<keyword> <input file name> <output file name>
+
+The -d is optional and will only be used to change to dycrypt mode. 
+
+You can use this in Visual studio by going to the <Project> menu and selecting:
+>>BigCpp Properties
+Under <Configuration Properties> >> <Debugging> find the <Command Arguments>
+field and enter: -d -k<keyword> <input file name> <output file name>
+
+The same rules apply as running from the command line. 
+
 Bryson Lanterman 20191015
+
+Updated 20261010 - I updated the code to only advance the cipher on letters and
+not on whitespace or punctuation. It was actually used to decrypt a cipher in 
+my daughter's gravity falls book. 
 */
 
 #include "stdafx.h"
@@ -115,7 +134,7 @@ void create_tables(std::vector<std::vector<char>>& upperVals, std::vector<std::v
 	@param keyword the keyword used for the cipher
 	@return the encrypted character
 */
-char encrypt(char ch, std::string keyword, bool decrypt, long count)
+char encrypt(char ch, std::string keyword, bool decrypt, long& count)
 {
 	const int ALPHABET_SIZE = 26;
 
@@ -124,6 +143,14 @@ char encrypt(char ch, std::string keyword, bool decrypt, long count)
 	   will be between 0 and 25 */
 	int chValUC = ch - 'A'; 
 	int chValLC = ch - 'a';
+	
+	// If the character is not A-Z or a-z, just return it.
+	if ((0 > chValUC || chValUC > 25) && (0 > chValLC || chValLC > 25))
+	{
+		count--;
+		return ch;
+	}
+
 	
 	// Instantiate encryption tables
 	std::vector<std::vector<char>> valsUC;
@@ -168,9 +195,9 @@ void encrypt_file(std::istream& in, std::ostream& out, std::string keyword, bool
 	char ch;
 	long count = 0;
 	while(in.get(ch))
-	{
+	{		
 		out.put(encrypt(ch, keyword, decrypt, count));
-		count++;
+		count++;		
 	}
 	
 }
